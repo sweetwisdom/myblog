@@ -1,7 +1,7 @@
 const nav = require("./config/nav.js");
 
 module.exports = {
-  dest: "./zc/", //输出文件夹名称
+  // dest: "./zc/", //输出文件夹名称
   // base: "/zc/",
 
   port: "1234",
