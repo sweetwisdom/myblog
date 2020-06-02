@@ -9,7 +9,7 @@ npm run build
 # 进入生成的文件夹
 cd docs/.vuepress/dist
 
-
+ echo "正在部署"
 
 # deploy to coding
 # echo 'sweet.cartoom.club' > CNAME  # 自定义域名
