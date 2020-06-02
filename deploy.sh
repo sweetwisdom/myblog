@@ -1,4 +1,4 @@
-# #!/usr/bin/env sh
+#!/usr/bin/env sh
 
 # # 确保脚本抛出遇到的错误
 set -e
@@ -20,6 +20,9 @@ else
  msg='来自github actions的自动部署 20200602'
   codingUrl=https://ZULMWvoZDe:${CODING_TOKEN}@e.coding.net/sweetwisdom/coding-demo.git
 fi
+git config --global user.name "sweetwisdom"
+git config --global user.email "sweetwisdom@qq.com"
+
 git add -A
 git commit -m "${msg}"
 git push -f $codingUrl master # 推送到coding
