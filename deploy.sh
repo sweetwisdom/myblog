@@ -13,12 +13,12 @@ cd docs/.vuepress/dist
 # echo 'sweet.cartoom.club' > CNAME
 if [ -z "$GITHUB_TOKEN" ]; then
   msg='deploy'
-  githubUrl=git@github.com:xugaoyi/vuepress-theme-vdoing.git
+  githubUrl=git@github.com/sweetwisdom/myblog.git
 else
   msg='来自github actions的自动部署'
-  githubUrl=https://xugaoyi:${GITHUB_TOKEN}@github.com/xugaoyi/vuepress-theme-vdoing.git
-  git config --global user.name "xugaoyi"
-  git config --global user.email "894072666@qq.com"
+  githubUrl=https://sweetwisdom:${GITHUB_TOKEN}@github.com/sweetwisdom/myblog.git
+  git config --global user.name "sweetwisdom"
+  git config --global user.email "sweetwisdom@qq.com"
 fi
 git init
 git add -A
@@ -28,9 +28,9 @@ git push -f $githubUrl master:gh-pages # 推送到github
 # deploy to coding
 # echo 'sweet.cartoom.club' > CNAME  # 自定义域名
 if [ -z "$CODING_TOKEN" ]; then  # -z 字符串 长度为0则为true；$CODING_TOKEN来自于github仓库`Settings/Secrets`设置的私密环境变量
-  codingUrl=git@e.coding.net:xgy/xgy.git
+  codingUrl=git@e.coding.net:sweetwisdom/coding-demo.git
 else
-  codingUrl=https://HmuzsGrGQX:${CODING_TOKEN}@e.coding.net/xgy/xgy.git
+  codingUrl=https://weetwisdom:${CODING_TOKEN}@e.coding.net/sweetwisdom/coding-demo.git
 fi
 git add -A
 git commit -m "${msg}"
