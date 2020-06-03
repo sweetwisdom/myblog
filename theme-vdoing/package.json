@@ -19,7 +19,7 @@
     "@vuepress/plugin-active-header-links": "^1.2.0",
     "@vuepress/plugin-nprogress": "^1.2.0",
     "@vuepress/plugin-search": "^1.2.0",
-	  "chalk": "^4.0.0",
+    "chalk": "^4.0.0",
     "json2yaml": "^1.1.0",
     "docsearch.js": "^2.5.2",
     "good-storage": "^1.1.1",
@@ -41,8 +41,8 @@
   "main": "index.js",
   "maintainers": [
     {
-      "name": "Evan xu",
-      "email": "894072666@qq.com"
+      "name": "SweetWisdom",
+      "email": "sweetwisdom@qq.com"
     }
   ]
 }

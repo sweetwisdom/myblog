@@ -37,7 +37,7 @@ module.exports = {
   },
 
   theme: "vdoing", // 使用依赖包主题
-  // theme: require.resolve('../../theme-vdoing'), // 使用本地主题
+  theme: require.resolve("../../theme-vdoing"), // 使用本地主题
 
   themeConfig: {
     // 主题配置
@@ -187,12 +187,12 @@ module.exports = {
         },
       },
     ],
-    [
-      "vuepress-plugin-baidu-tongji", // 百度统计
-      {
-        hm: "503f098e7e5b3a5b5d8c5fc2938af002",
-      },
-    ],
+    // [
+    //   "vuepress-plugin-baidu-tongji", // 百度统计
+    //   {
+    //     hm: "503f098e7e5b3a5b5d8c5fc2938af002",
+    //   },
+    // ],
     // [
     //   "vuepress-plugin-comment", // 评论
     //   // {

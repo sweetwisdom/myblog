@@ -7,7 +7,7 @@
     </div>
 
     <!-- repo link -->
-    <a
+    <!-- <a
       v-if="repoLink"
       :href="repoLink"
       class="repo-link"
@@ -17,7 +17,7 @@
     >
       {{ repoLabel }}
       <OutboundLink />
-    </a>
+    </a>-->
   </nav>
 </template>
 

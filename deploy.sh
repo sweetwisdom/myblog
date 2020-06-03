@@ -23,16 +23,17 @@ else
  msg='来自github actions的自动部署 20200602'
   codingUrl=https://ZULMWvoZDe:${CODING_TOKEN}@e.coding.net/sweetwisdom/coding-demo.git
 
-    echo $msg
-    sleep 2s
-    echo $CODING_TOKEN
+    echo "正在最后部署"
+  
+
 fi
+git init
 git config --global user.name "sweetwisdom"
 git config --global user.email "sweetwisdom@qq.com"
   echo 'git'
 git add -A
-git commit -m "${msg}"
-  echo 'git-2'
+git commit -m "自动部署"
+  echo '正在自动部署0602'
 git push -f $codingUrl master # 推送到coding
 
 cd - # 退回开始所在目录
