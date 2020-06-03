@@ -20,7 +20,7 @@ module.exports = {
           "前端博客,个人技术博客,前端,前端开发,前端框架,web前端,前端面试题,技术文档,学习,面试,JavaScript,js,ES6,TypeScript,vue,python,css3,html5,Node,git,github,markdown",
       },
     ],
-    ["meta", { name: "baidu-site-verification", content: "7F55weZDDc" }], // 百度统计博主验证
+    // ["meta", { name: "baidu-site-verification", content: "7F55weZDDc" }], // 百度统计博主验证
     ["meta", { name: "theme-color", content: "#11a8cd" }], // 移动浏览器主题颜色
 
     // 不蒜子访问量统计
@@ -36,7 +36,7 @@ module.exports = {
     },
   },
 
-  theme: "vdoing", // 使用依赖包主题
+  // theme: "vdoing", // 使用依赖包主题
   theme: require.resolve("../../theme-vdoing"), // 使用本地主题
 
   themeConfig: {
@@ -44,7 +44,7 @@ module.exports = {
     nav,
     sidebarDepth: 4, // 侧边栏显示深度，默认1，最大2（显示到h3标题）
     logo: "/img/EB-logo.png", // 导航栏logo
-    repo: "xugaoyi/vuepress-theme-vdoing", // 导航栏右侧生成Github链接
+
     searchMaxSuggestions: 10, // 搜索结果显示最大数
     lastUpdated: "上次更新", // 更新的时间，及前缀文字   string | boolean (取值为git提交时间)
     docsDir: "docs", // 编辑的文件夹
