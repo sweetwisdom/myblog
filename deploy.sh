@@ -38,5 +38,6 @@ git commit -m "${msg}"
   echo '正在自动部署'$(date "+%Y-%m-%d %H:%M:%S")
 git push -f $codingUrl master # 推送到coding
 
-cd - # 退回开始所在目录
+cd - 
+ echo '即将删除文件'$(date "+%Y-%m-%d %H:%M:%S")
 rm -rf docs/.vuepress/dist
