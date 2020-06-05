@@ -18,12 +18,12 @@ if [ -z "$CODING_TOKEN" ]; then  # -z 字符串 长度为0则为true；$CODING_T
 
  msg='手动部署于'$(date "+%Y-%m-%d %H:%M:%S")
    echo $msg
-  codingUrl=git@e.coding.net:sweetwisdom/coding-demo.git
+  codingUrl=git@e.coding.net:sweetwisdom/myblog.git
 else
 
 
  msg='来自github actions的自动部署于'$(date "+%Y-%m-%d %H:%M:%S")
-  codingUrl=https://ZULMWvoZDe:${CODING_TOKEN}@e.coding.net/sweetwisdom/coding-demo.git
+  codingUrl=https://ZULMWvoZDe:${CODING_TOKEN}@e.coding.net/sweetwisdom/myblog.git
 
     echo "正在最后部署"
   
@@ -38,5 +38,6 @@ git commit -m "${msg}"
   echo '正在自动部署'$(date "+%Y-%m-%d %H:%M:%S")
 git push -f $codingUrl master # 推送到coding
 
-cd - # 退回开始所在目录
+cd - 
+ echo '即将删除文件'$(date "+%Y-%m-%d %H:%M:%S")
 rm -rf docs/.vuepress/dist
