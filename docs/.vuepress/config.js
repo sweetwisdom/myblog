@@ -1,8 +1,8 @@
 const nav = require("./config/nav.js");
 
 module.exports = {
-  // dest: "./zc/", //输出文件夹名称
-  // base: "/zc/",
+  // dest: "./myblog/", //输出文件夹名称
+  // base: "/myblog/", //myblog
 
   port: "1234",
   title: "张大明的博客",
@@ -144,10 +144,10 @@ module.exports = {
             title: "在Bing中搜索",
             frontUrl: "https://cn.bing.com/search?q=",
           },
-          {
-            title: "通过百度搜索本站的",
-            frontUrl: "https://www.baidu.com/s?wd=site%3Axugaoyi.com%20",
-          },
+          // {
+          //   title: "通过百度搜索本站的",
+          //   frontUrl: "https://www.baidu.com/s?wd=site%3Axugaoyi.com%20",
+          // },
         ],
       },
     ],
