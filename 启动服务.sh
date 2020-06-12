@@ -1,9 +1,9 @@
 set -e
 
-cd D:/data/desktop/sweet/vuepress-theme-vdoing-master
+cd D:/data/文档/章程/myblog
 
  code .
 
 
- npm run dev
+# npm run dev
 
