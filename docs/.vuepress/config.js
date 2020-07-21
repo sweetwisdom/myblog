@@ -1,8 +1,8 @@
 const nav = require("./config/nav.js");
 
 module.exports = {
-  // dest: "./myblog/", //输出文件夹名称
-  // base: "/myblog/", //myblog
+  dest: "./myblog/", //输出文件夹名称
+  base: "/myblog/", //myblog
 
   port: "1234",
   title: "张大明的博客",
@@ -104,14 +104,14 @@ module.exports = {
         {
           iconClass: "icon-erji",
           title: "听音乐",
-          link: "https://music.163.com/#/playlist?id=755597173",
+          link: "https://music.163.com/#/user/home?id=362401107",
         },
       ],
     },
     footer: {
       // 页脚信息
       createYear: 2019, // 博客创建年份
-      copyrightInfo: 'Evan Xu | <a href="https://github.com/xugaoyi/vuepress-theme-vdoing/blob/master/LICENSE" target="_blank">MIT License</a>', // 博客版权信息，支持a标签
+      copyrightInfo: '张大明 | <a href="http://cartoom.club/weathers/" target="_blank"> 简单搜索</a>', // 博客版权信息，支持a标签
     },
   },
   plugins: [
