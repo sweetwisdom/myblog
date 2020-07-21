@@ -10,6 +10,41 @@ set -e
 starttime=`date +'%Y-%m-%d %H:%M:%S'`
 
 # 同步代码到码云上
+# 移除github
+
+git remote remove origin
+
+#  添加码云
+
+
+msg='手动更新码云于'$(date "+%Y-%m-%d %H:%M:%S")
+
+
+git config --global user.name "sweetwisdom"
+
+git config --global user.email "sweetwisdom@qq.com"
+
+git add -A
+
+git commit -m "${msg}"
+
+
+git remote add origin https://gitee.com/sweetwisdom/myblog.git
+
+
+
+echo "正在部署"
+
+git push origin master -f
+
+
+git remote remove origin
+
+git remote add origin https://github.com/sweetwisdom/myblog.git
+
+
+echo "地址已经还原为github https://github.com/sweetwisdom/myblog.git "
+echo '一下开始进行打包发布到码云'
 
 
 # 生成静态文件
@@ -70,4 +105,7 @@ rm -rf myblog
 endtime=`date +'%Y-%m-%d %H:%M:%S'`
 start_seconds=$(date --date="$starttime" +%s);
 end_seconds=$(date --date="$endtime" +%s);
+
+
+echo "部署完毕,请修改config文件然后部署github和coding"
 echo "本次运行时间： "$((end_seconds-start_seconds))"s"
