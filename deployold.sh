@@ -107,5 +107,10 @@ start_seconds=$(date --date="$starttime" +%s);
 end_seconds=$(date --date="$endtime" +%s);
 
 
-echo "部署完毕,请修改config文件然后部署github和coding"
+
 echo "本次运行时间： "$((end_seconds-start_seconds))"s"
+
+echo "部署完毕,请修改config文件然后部署github和coding 注释这两行"
+
+code ./docs/.vuepress/config.js
+

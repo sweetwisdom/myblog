@@ -2,6 +2,8 @@
 
 # # 确保脚本抛出遇到的错误
 set -e
+
+starttime=`date +'%Y-%m-%d %H:%M:%S'`
  echo "你好"
 
 # # 生成静态文件
@@ -35,9 +37,19 @@ git config --global user.email "sweetwisdom@qq.com"
   echo 'git'
 git add -A
 git commit -m "${msg}"
-  echo '正在自动部署'$(date "+%Y-%m-%d %H:%M:%S")
+  echo '正在自动部署于美国时间'$(date "+%Y-%m-%d %H:%M:%S")
 git push -f $codingUrl master # 推送到coding
 
 cd - 
  echo '即将删除文件'$(date "+%Y-%m-%d %H:%M:%S")
 rm -rf docs/.vuepress/dist
+
+
+endtime=`date +'%Y-%m-%d %H:%M:%S'`
+start_seconds=$(date --date="$starttime" +%s);
+end_seconds=$(date --date="$endtime" +%s);
+
+
+
+echo "本次运行时间： "$((end_seconds-start_seconds))"s"
+
