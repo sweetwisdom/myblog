@@ -1,9 +1,16 @@
 #!/usr/bin/env sh
 
 # 确保脚本抛出遇到的错误 部署到码云
+# github地址: https://github.com/sweetwisdom/myblog.git
+
 
 # 需要进行如下修改 dist 目录
 set -e
+
+starttime=`date +'%Y-%m-%d %H:%M:%S'`
+
+# 同步代码到码云上
+
 
 # 生成静态文件
 npm run build
@@ -59,3 +66,8 @@ cd -
  echo '即将删除文件'$(date "+%Y-%m-%d %H:%M:%S")
  
 rm -rf myblog
+
+endtime=`date +'%Y-%m-%d %H:%M:%S'`
+start_seconds=$(date --date="$starttime" +%s);
+end_seconds=$(date --date="$endtime" +%s);
+echo "本次运行时间： "$((end_seconds-start_seconds))"s"
