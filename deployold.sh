@@ -46,6 +46,12 @@ git remote add origin https://github.com/sweetwisdom/myblog.git
 echo "地址已经还原为github https://github.com/sweetwisdom/myblog.git "
 echo '一下开始进行打包发布到码云'
 
+code ./docs/.vuepress/config.js
+
+echo '📌📌📌📌📌📌请修改config文件然后部署到码云❤❤❤❤❤❤❤❤❤'
+sleep  5s
+
+
 
 # 生成静态文件
 npm run build
