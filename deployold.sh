@@ -49,7 +49,7 @@ echo '一下开始进行打包发布到码云'
 code ./docs/.vuepress/config.js
 
 echo '📌📌📌📌📌📌请修改config文件然后部署到码云❤❤❤❤❤❤❤❤❤'
-sleep  5s
+sleep  10s
 
 
 
@@ -120,3 +120,4 @@ echo "部署完毕,请修改config文件然后部署github和coding 注释这两
 
 code ./docs/.vuepress/config.js
 
+start msedge https://gitee.com/sweetwisdom/myblog/pages
