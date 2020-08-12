@@ -2,7 +2,7 @@ const nav = require("./config/nav.js");
 
 module.exports = {
   // dest: "./myblog/", //输出文件夹名称
-  // base: "/myblog/", //myblog
+  base: "/myblog/", //myblog
   //  提交到github需要屏蔽此更新
 
   port: "1234",
