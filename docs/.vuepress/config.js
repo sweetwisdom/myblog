@@ -1,8 +1,8 @@
 const nav = require("./config/nav.js");
 
 module.exports = {
-  // dest: "./myblog/", //输出文件夹名称  gitee
-  // base: "/myblog/", //myblog gitee
+  dest: "./myblog/", //输出文件夹名称  gitee
+  base: "/myblog/", //myblog gitee
   //  提交到github需要屏蔽  这两行
 
   port: "1234",
