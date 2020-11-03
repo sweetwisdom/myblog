@@ -12,7 +12,7 @@ starttime=`date +'%Y-%m-%d %H:%M:%S'`
 # 同步代码到码云上
 # 移除github
 
-git remote remove origin
+# git remote remove origin
 
 #  添加码云
 
